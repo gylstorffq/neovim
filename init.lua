@@ -192,6 +192,7 @@ require('lazy').setup({
 -- [[ Setting options ]]
 -- See `:help vim.o`
 
+require ('options')
 -- Set highlight on search
 vim.o.hlsearch = false
 
@@ -231,6 +232,7 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 -- [[ Basic Keymaps ]]
+require ('keymaps')
 
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
