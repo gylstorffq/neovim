@@ -15,7 +15,9 @@ vim.keymap.set("n", "<leader>|", "<C-W>v", { desc = "Split window right" })
 
 vim.keymap.set("n", "<S-h>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
 vim.keymap.set("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
-vim.keymap.set("n", "[b", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
-vim.keymap.set("n", "]b", "<cmd>bnext<cr>", { desc = "Next buffer" })
-vim.keymap.set("n", "<leader>bb", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
+vim.keymap.set("n", "<leader>bp", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
+vim.keymap.set("n", "<leader>bn", "<cmd>bnext<cr>", { desc = "Next buffer" })
+vim.keymap.set("n", "<leader>bb", "<cmd>e #<cr>", { desc = "list " })
 vim.keymap.set("n", "<leader>`", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
+
+vim.keymap.set("n", "<leader>tw", ":set list!<cr>", { desc = "Toggle withspaces" })
