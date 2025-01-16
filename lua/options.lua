@@ -36,3 +36,9 @@ vim.o.completeopt = 'menuone,noselect'
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 vim.opt.listchars = { tab = '·»', eol = '⤶', space = '·', trail = '✚', extends = '◀', precedes = '▶', }
+
+-- enable spell checking
+vim.o.spell = true
+vim.o.spelllang = "en_us,de"
+vim.o.sps = "file:/home/gylstorff/.config/nvim/spell/sugg,best"
+vim.cmd.append = "set spell syntax=off"
