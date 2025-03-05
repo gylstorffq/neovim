@@ -1,5 +1,9 @@
 return {
     "ravibrock/spellwarn.nvim",
     event = "VeryLazy",
-    config = true,
+    config = function ()
+      require("spellwarn").setup({
+      max_file_size = 20000
+    })
+    end,
 }
