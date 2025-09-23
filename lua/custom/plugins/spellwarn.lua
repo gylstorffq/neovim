@@ -3,7 +3,7 @@ return {
     event = "VeryLazy",
     config = function ()
       require("spellwarn").setup({
-      max_file_size = 20000
+      max_file_size = 5000
     })
     end,
 }
