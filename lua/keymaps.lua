@@ -30,6 +30,9 @@ vim.keymap.set("n", "<leader>w|", "<C-W>v", { desc = "Split window right" })
 vim.keymap.set("n", "<leader>-", "<C-W>s", { desc = "Split window below" })
 vim.keymap.set("n", "<leader>|", "<C-W>v", { desc = "Split window right" })
 
+vim.keymap.set("n", "<leader>tw", ":set list!<cr>", { desc = "Toggle withspaces" })
+vim.keymap.set("n", "<leader>tf", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
+
 -- Diagnostic keymaps
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
