@@ -5,12 +5,12 @@ vim.o.hlsearch = false
 vim.wo.number = true
 
 -- Enable mouse mode
-vim.o.mouse = 'a'
+vim.o.mouse = "a"
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
-vim.o.clipboard = 'unnamedplus'
+vim.o.clipboard = "unnamedplus"
 
 -- Enable break indent
 vim.o.breakindent = true
@@ -23,7 +23,7 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- Keep signcolumn on by default
-vim.wo.signcolumn = 'yes'
+vim.wo.signcolumn = "yes"
 
 -- Decrease update time
 vim.o.updatetime = 250
@@ -31,14 +31,16 @@ vim.o.timeout = true
 vim.o.timeoutlen = 300
 
 -- Set completeopt to have a better completion experience
-vim.o.completeopt = 'menuone,noselect'
+vim.o.completeopt = "menuone,noselect"
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
-vim.opt.listchars = { tab = '·»', eol = '⤶', space = '·', trail = '✚', extends = '◀', precedes = '▶', }
+vim.opt.listchars = { tab = "·»", eol = "⤶", space = "·", trail = "✚", extends = "◀", precedes = "▶" }
 
 -- enable spell checking
 vim.o.spell = true
 vim.o.spelllang = "en_us,de"
 vim.o.sps = "file:/home/gylstorff/.config/nvim/spell/sugg,best"
 vim.cmd.append = "set spell syntax=off"
+vim.o.expandtab = true
+vim.o.tabstop = 4
